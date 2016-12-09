@@ -1,112 +1,3 @@
-/*
-"use strict";
-
-
-class App{
-	constructor(){
-		this.media = [
-			{
-				"img" : "http://lorempixel.com/580/250/nature/1",
-				"alignment" : "center-align",
-				"caption": "asdfasdfasdfa",
-				"slogan": "asdfasdasdfasdfasdfasdfasdf"
-			},
-			{
-				"img" : "http://lorempixel.com/580/250/nature/2",
-				"alignment" : "left-align",
-				"caption": "asdfasdfasdfa",
-				"slogan": "asdfasdasdfasdfasdfasdfasdf"
-			},
-			{
-				"img" : "http://lorempixel.com/580/250/nature/3",
-				"alignment" : "right-align",
-				"caption": "asdfasdfasdfa",
-				"slogan": "asdfasdasdfasdfasdfasdfasdf"
-			},
-			{
-				"img" : "http://lorempixel.com/580/250/nature/4",
-				"alignment" : "center-align",
-				"caption": "asdfasdfasdfa",
-				"slogan": "asdfasdasdfasdfasdfasdfasdf"
-			}
-		];
-	}
-	render(html, component){
-
-		component.innerHTML += html;
-	}
-
-	reRender(html, component){
-
-		component.innerHTML = html;
-	}
-}
-
-class Component extends App{
-	constructor(){
-
-		super();
-	}
-
-	ukayLayout(){
-		let html = `
-			 <nav>
-			    <div class="nav-wrapper blue darken-4">
-			      <a href="#" class="brand-logo yellow-text ">UKAY v1.0</a>
-			      <ul id="nav-mobile" class="right hide-on-med-and-down">
-			        <li><a href="#">Items</a></li>
-			        <li><a href="#">Cart</a></li>
-			        <li><a href="#">New</a></li>
-			      </ul>
-			    </div>
-			  </nav>
-
-
-			  <div class="slider">
-			    <ul class="slides">
-
-			    `;
-
-			   for(let i=0;i<this.media.length;i++){
-					html += `
-					      <li>
-					        <img src="${this.media[i].img}"> <!-- random image -->
-					        <div class="caption ${this.media[i].alignment}">
-					          <h3>${this.media[i].caption}</h3>
-					          <h5 class="light grey-text text-lighten-3">${this.media[i].slogan}</h5>
-					        </div>
-					      </li>
-					    
-					 `;
-					}
-
-
-			 html += `
-
-					</ul>
-				  </div>
-				<footer class="page-footer blue darken-4">		          
-		          <div class="footer-copyright">
-		            <div class="container">
-		            © 2016 - Another decode App
-		            </div>
-		          </div>
-		        </footer>			  
-		`;
-
-		this.reRender(`
-			${html}
-			`,document.getElementById("app"));
-	}
-}
-
-let component = new Component();
-component.ukayLayout();
-*/
-
-
-
-
 "use strict";
 
 class App{
@@ -114,256 +5,40 @@ class App{
 		this.recipe = [
 			{
 				"id": 1,
-				"name": "Utan",
-				"description": "Utan or Utan Bisaya is a vegetable soup dish popular in the Visayan region, commonly it consists different vegetables like malunggay leaves, okra, squash, taro, vine spinach (alugbati), eggplants, snake beans (sitaw), ginger and tomatoes cooked together with either pork, fish or shrimps. Similar to laswa and the only difference it the vegetable used, are the ones commonly found in the Visayas.",
-				"photo": "img/utan.jpg",
-				"ingredients":[
-					{
-						"qty": "1 large bunch",
-						"name": "spinach"
-					},
-					{
-						"qty": "1/2 small",
-						"name": "butternut squash"
-					},
-					{
-						"qty": "200 g",
-						"name": "sliced okra"
-					},
-					{
-						"qty": "250 g",
-						"name": "fatty minced pork"
-					},
-					{
-						"qty": "6 cups",
-						"name": "chicken stock"
-					},
-					{
-						"qty": "1",
-						"name": "finely chopped onion"
-					},
-					{
-						"qty": "4 cloves",
-						"name": "minced garlic"
-					},
-					{
-						"qty": "1 tbsp",
-						"name": "minced ginger"
-					},
-					{
-						"qty": "1",
-						"name": "fish sauce"
-					},
-					{
-						"qty": "1",
-						"name": "freshly ground black pepper"
-					},
-					{
-						"qty": "1",
-						"name": "oil"
-					}
-				],
-				"preparationtime": "15 minutes",
-				"cookingtime": "20 minutes",
-				"yields": "4-5 servings",
-				"procedure": [
-					"In a pot add oil then sauté garlic, ginger and onions.",
-					"Add the pork mince and cook until brown in colour.",
-					"Add the chicken stock then bring to a boil, simmer for 5 minutes.",
-					"Add the squash cook for 3 minutes.",
-					"Add the okra and cook for 3 more minutes.",
-					"Season with fish sauce and freshly ground black pepper add the spinach then simmer for one more minute, turn heat off then cover. Let spinach cook in residual heat for 2 minutes then serve."
-				]
+				"name": "Blades of Voth Domosh",
+				"description": "Set in her vengeance against the abyss, Tresdin approached the baleful armorer Qwyth, who gifted to her these hellbound blades. Though she obtained the swords without cost, she may realize too late that the price extracted for wielding such incredible power could be more than she is willing to part with.",
+				"photo": "img/img1.jpg",
+				"preparationtime": "1100",
+				"cookingtime": "Davao City"
 			},
 			{
 				"id": 2,
-				"name": "Tolang Bisaya",
-				"description": "One of the things and considered as very special food in Iligan City that is also known for fresh seafood capital in the region. Most fish sold in our local market here in Pila came from Laguna Lake, bangus (milkfish), tilapia, dalag (mudfish), hito and kanduli (catfish).",
-				"photo": "img/tolangbisaya.jpg",
-				"ingredients":[
-					{
-						"qty": "1/2 kilo",
-						"name": "Pampano or any white-meat fish"
-					},
-					{
-						"qty": "1",
-						"name": "quartered bell pepper"
-					},
-					{
-						"qty": "1 stalk",
-						"name": "Salay (lemongrass)"
-					},
-					{
-						"qty": "3",
-						"name": "quartered tomatoes"
-					},
-					{
-						"qty": "2",
-						"name": "sliced in half onions"
-					},
-					{
-						"qty": "1 bunch",
-						"name": "leeks"
-					},
-					{
-						"qty": "3 cups",
-						"name": "water"
-					}
-				],
-				"preparationtime": "15 minutes",
-				"cookingtime": "20 minutes",
-				"yields": "4-5 servings",
-				"procedure": [
-					"Place all ingredients in a casserole except fish.",
-					"Bring to a boil.",
-					"Add the fish and boil again until the fish is cooked.",
-					"Serve hot."
-				]
+				"name": "Manifold Paradox",
+				"description": "With a raspy cackle, the elder smith Craler swung the sword that his family had spent eleven generations to fold and forge. So sharp it was that, with a sound like tearing fabric, a rip in reality tore open. Through this rip, Craler recognized himself from moments before, holding aloft the very same coveted blade. Then, in a fit of greed and madness, he cut this earlier self down to seize the twin sword as his own. Too late, however, Craler felt a familiar wound, and was suddenly filled with the memory of being cut down himself.",
+				"photo": "img/img2.jpg",
+				"preparationtime": "1200",
+				"cookingtime": "Davao City"
 			},
 			{
 				"id": 3,
-				"name": "Pork Humba Bisaya",
-				"description": "Humba (HOOM-BAA) is a Filipino dish similar to adobo, and popular in central part of the Philippines, particularly among the Visayan speaking people. The method of cooking is similar to adobo (chicken or lean pork) by simmering the meat in a marinade of soy sauce, vinegar, brown sugar, bay leaf, and peppercorns. The difference is the type of meat used which is pork belly, which has skin, fat, and lean portions.",
-				"photo": "img/porkhumbabisaya.jpg",
-				"ingredients":[
-					{
-						"qty": "2 lbs.",
-						"name": "cut into 1 and 1/2-inch squares of pork belly"
-					},
-					{
-						"qty": "1 pack",
-						"name": "dried banana blossoms"
-					},
-					{
-						"qty": "1/4 cup",
-						"name": "salted black beans"
-					},
-					{
-						"qty": "1/2 cup",
-						"name": "soy sauce"
-					},
-					{
-						"qty": "1/4 cup",
-						"name": "distilled white vinegar"
-					},
-					{
-						"qty": "1/2 cup",
-						"name": "brown sugar"
-					},
-					{
-						"qty": "6",
-						"name": "minced garlic cloves"
-					},
-					{
-						"qty": "2",
-						"name": "dry bay leaves"
-					},
-					{
-						"qty": "1 teaspoon",
-						"name": "whole peppercorns"
-					},
-					{
-						"qty": "4 cups",
-						"name": "water"
-					}
-				],
-				"preparationtime": "10 minutes",
-				"cookingtime": "1 hours, 30 minutes",
-				"yields": "6-8 servings",
-				"procedure": [
-					"Rinse meat thoroughly under cold running water and pat dry with paper towels.",
-					"In a non-stick skillet over medium heat, arrange pork belly slices in one layer and pan-fry until most of the oil comes out. If you use a smaller pan, you may do this in two batches.",
-					"Once the meat turns brown and most of the fat has rendered, remove from heat and transfer to a cooking pot.",
-					"Add the rest of the ingredients into the pot and bring to a boil. Lower heat to medium low and simmer for an hour until pork has become tender and sauce has thickened.",
-					"Serve with rice."
-				]
+				"name": "Fractal Horns of Inner Abysm",
+				"description": "Deep in the hell of Hell, Terrorblade lay bound behind fractal walls, sentenced to an eternity of twisted contemplation. He stared long into the reflection of his own worst self. And long did his worst self stare into him. Now they rise together, a single entity more powerful than ever before.",
+				"photo": "img/img3.jpg",
+				"preparationtime": "1050",
+				"cookingtime": "Cebu"
 			},
 			{
 				"id": 4,
-				"name": "Manok Adobo Sa Gata",
-				"description": "Masarap ang “native na manok” sa lutuing ito.  Masarap lalo na kapag ‘sinagkotsa ito sa tanglad” bago ito lagyan ng gata at luyang dilaw.",
-				"photo": "img/manokadobosagata.jpg",
-				"ingredients":[
-					{
-						"qty": "1 kilo",
-						"name": "manok adobo cut"
-					},
-					{
-						"qty": "1",
-						"name": "Sibuyas katamtaman ang laki"
-					},
-					{
-						"qty": "3",
-						"name": "butil ng Bawang"
-					},
-					{
-						"qty": "1 piece",
-						"name": "Laurel"
-					},
-					{
-						"qty": "1 piece",
-						"name": "Tanglad"
-					},
-					{
-						"qty": "1",
-						"name": "Luyang dilaw"
-					},
-					{
-						"qty": "1",
-						"name": "Luya"
-					},
-					{
-						"qty": "1",
-						"name": "Sili pangsigang o pamaksiw"
-					},
-					{
-						"qty": "1",
-						"name": "Sili Labuyo"
-					},
-					{
-						"qty": "1",
-						"name": "Sili pokingan o bell pepper"
-					},
-					{
-						"qty": "1",
-						"name": "Paminta durog"
-					},
-					{
-						"qty": "1/2 cup",
-						"name": "Vinegar"
-					},
-					{
-						"qty": "1 tablespoon",
-						"name": "Patis"
-					},
-					{
-						"qty": "1",
-						"name": "Magic Sarap"
-					},
-					{
-						"qty": "1",
-						"name": "Gata"
-					}
-				],
-				"preparationtime": "10 minutes",
-				"cookingtime": "1 hours, 30 minutes",
-				"yields": "6-8 servings",
-				"procedure": [
-					"Igisa ang sibuyas, bawang at luya papulahin kunti",
-					"Ilagay ang manok, patis paminta at laurel, hayaan ng 5 minuto na kumukulo at ilagay na rin ang tanglad at suka.  Takpan.",
-					"Kapag tapos na itong pakuluan ng 5 minuto, ilagay ang pangalawang gata kasabay ang luyang dilaw na hiniwa-hiwa ng maliliit.  Hayaang kumulo ng mga  10 minuto.",
-					"Puwede nang isabay ang papaya na hiniwa ng slanting o ayon sa gusto mong sukat",
-					"Kapag luto na, ilagay na ang panghuling gata, kasabay ng siling pamaksiw at siling labuyo (tantyahin lamang ang gusto mong anghang).",
-					"Timplahin ng asin at magic sarap, ilagay ang bell pepper o siling pokingan.",
-					"Pakuluan ng dahan dahan hanggang sa ito ay lumapot.  Mas masarap kapag lumabas ang sariling mantika ng niyog ng kunti.",
-					"Ihain na mainit kasabay ng mainit din na kanin."
-				]
+				"name": "Fiery Soul of the Slayer",
+				"description": "It has often been said that Lina's hair was touched by fire, though few know the truth of this claim. In Lina's youth, as her natural talents first began to smoke and smolder it was her fiery hair that told the tale of the storm to come. With time and training, her skill and control of the flame was enough to suppress the searing display. Yet on occasion, when her ire grows and tempers flare, the full measure of Lina's burning spirit threatens to unleash its wrath.",
+				"photo": "img/img4.jpg",
+				"preparationtime": "900",
+				"cookingtime": "Manila"
 			}			
 		];
 		this.state = [
 			{
 				"bind": {
-					"procedures":[],
 					"ingredients_qty":[],
 					"ingredients_name":[]
 				}
@@ -388,33 +63,14 @@ class App{
 		let photo = document.getElementById('recipe_photo');
 		let preparationtime = document.getElementById('recipe_preparationtime');
 		let cookingtime = document.getElementById('recipe_cookingtime');
-		let yields = document.getElementById('recipe_yields');
-		
-		let dummyIngredients = [];
-		for(let i=0;i<this.state[0].bind.ingredients_qty.length;i++){
-			dummyIngredients.push({
-				"qty" : this.state[0].bind.ingredients_qty[i],
-				"name" : this.state[0].bind.ingredients_name[i]
-			});
-		}
-		let ingredients = dummyIngredients;
-
-		let dummyProcedure = [];
-		for(let i=0;i<this.state[0].bind.procedures.length;i++){
-			dummyProcedure.push(this.state[0].bind.procedures[i]);
-		}
-		let procedure = dummyProcedure;
 
 		let recipe = {			
 			"id": id.value,
 			"name": name.value,
 			"description": description.value,
 			"photo": photo.value,
-			"ingredients":ingredients,
 			"preparationtime": preparationtime.value,
-			"cookingtime": cookingtime.value,
-			"yields": yields.value,
-			"procedure": procedure
+			"cookingtime": cookingtime.value
 		};
 
 
@@ -458,23 +114,9 @@ class App{
 		return objects;
 	}
 
-	bindRecipeNewProcedures(val,id){
-		let bind = this.state[0].bind.procedures;
-		bind[id] = val;
-		// console.log(bind);
-	}	
+	
 
-	bindRecipeNewIngredients(val,id,obj){
-		let bind = null;
-		if(obj === "qty"){
-			bind = this.state[0].bind.ingredients_qty;
-		}
-		else if(obj === "name"){
-			bind = this.state[0].bind.ingredients_name;
-		}
-		bind[id] = val;
-		// console.log(bind);
-	}	
+	
 }
 
 class Component extends App{
@@ -488,14 +130,14 @@ class Component extends App{
 			<div id="recipeLayout" class="container">
 				<nav>
 					<div class="nav-wrapper">
-						<a href="#" onclick="component.recipeLayout()" class="brand-logo">&nbsp;&nbsp;SUD-AN</a>
+						<a href="#" onclick="component.recipeLayout()" class="brand-logo">&nbsp;&nbsp;Dota 2 Market</a>
 						<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 						<ul class="right hide-on-med-and-down">
-							<li><a href="#" onclick="component.recipeList()"><i class="material-icons left">assignment</i>Recipes</a></li>
+							<li><a href="#" onclick="component.recipeList()"><i class="material-icons left">assignment</i>Shop</a></li>
 							<li><a href="#" onclick="component.recipeCreate()"><i class="material-icons left">note_add</i>Create</a></li>
 						</ul>
 						<ul class="side-nav" id="mobile-demo">
-							<li><a href="#" onclick="component.recipeList()"><i class="material-icons left">assignment</i>Recipes</a></li>
+							<li><a href="#" onclick="component.recipeList()"><i class="material-icons left">assignment</i>Shop</a></li>
 							<li><a href="#" onclick="component.recipeCreate()"><i class="material-icons left">note_add</i>Create</a></li>
 						</ul>
 					</div>
@@ -510,8 +152,8 @@ class Component extends App{
 					<div class="container">
 						<div class="row">
 							<div class="col l6 s12">
-								<h5 class="white-text">Recipe App</h5>
-								<p class="grey-text text-lighten-4">Another decode demo app for students in web dev't and oop. A bisaya inspired recipe app that promotes native food and culture.</p>
+								<h5 class="white-text">Dota 2 Market</h5>
+								<p class="grey-text text-lighten-4">This is a dota 2 market. you can display and sell your items here.</p>
 							</div>
 							<div class="col l4 offset-l2 s12">
 								<h5 class="white-text">Links</h5>
@@ -522,7 +164,7 @@ class Component extends App{
 											Home</a></li>
 											<li><a class="grey-text text-lighten-3" href="#" onclick="component.recipeList()">
 												<!-- <i class="material-icons left">assignment</i> -->
-												Recipes</a></li>
+												Shop</a></li>
 												<li><a class="grey-text text-lighten-3" href="#" onclick="component.recipeCreate()">
 													<!-- <i class="material-icons left">dashboard</i> -->
 													Create</a></li>
@@ -552,7 +194,7 @@ class Component extends App{
 	recipeRecent(){
 		
 		let html = `
-			<h5 class="center-align">Recent Recipes</h5>
+			<h5 class="center-align"><font color ="red">Recent Items</font></h5>
 			<div class="row">
 		`;
 
@@ -615,64 +257,23 @@ class Component extends App{
 				<table class="striped">
 					<thead>
 						<tr>
-							<th>Preparation Time</th>
-							<th>Cooking Time</th>
-							<th>Yields</th>
+							<th>Price</th>
+							<th>Meetup</th>
+							
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>${r.preparationtime}</td>
 							<td>${r.cookingtime}</td>
-							<td>${r.yields}</td>
+						
 						</tr>					
 					</tbody>
 				</table>
 			</div>
 		`;
 
-		html += `
-			<div class="row">				
-				<div class="col s6 m6">
-					<h6>Ingredients</h6>
-					<ul class="collection">
-		`;
 
-		for(let i=0;i<r.ingredients.length;i++){
-			let ri = r.ingredients[i];
-			html += `
-						<li class="collection-item avatar">
-							<i class="material-icons circle">star</i>
-							<span class="title">${ri.qty}</span>
-							<p>${ri.name}<br>
-								
-							</p>
-							
-						</li>
-			`;
-		}
-
-		html += `				
-					</ul>
-				</div>
-				<div class="col s6 m6">
-					<h6>Procedure</h6>
-					<ul class="collection">
-		`;
-
-		for(let i=0;i<r.procedure.length;i++){
-			let rp = r.procedure[i];
-			html += `
-						<li class="collection-item avatar">
-							<i class="material-icons circle">done</i>
-							<span class="title">Step ${i+1}</span>
-							<p>${rp}<br>
-								
-							</p>
-							
-						</li>
-			`;
-		}	
 
 		html += `
 					</ul>
@@ -774,7 +375,7 @@ class Component extends App{
 		let html = `
 			<div class="row">
 				<form class="col s12">
-				<h5 class="center-align">Create New Recipe</h5>
+				<h5 class="center-align"><font color="red">Post new item</font></h5>
 				<button onclick="component.createRecipe()" class="btn waves-effect waves-light">Save</button>
 					<div class="row">
 						<div class="input-field col s6">
@@ -782,7 +383,7 @@ class Component extends App{
 						</div>
 						<div class="input-field col s6">
 							<input id="recipe_name" type="text" class="validate">
-							<label for="recipe_name">NAME</label>
+							<label for="recipe_name">ITEM NAME</label>
 						</div>
 					</div>
 					<div class="row">
@@ -798,30 +399,14 @@ class Component extends App{
 					<div class="row">
 						<div class="input-field col s4">
 							<input id="recipe_preparationtime" type="text" class="validate">
-							<label for="recipe_preparationtime">PREPARATION TIME</label>
+							<label for="recipe_preparationtime">PRICE</label>
 						</div>
 						<div class="input-field col s4">
 							<input id="recipe_cookingtime" type="text" class="validate">
-							<label for="recipe_cookingtime">COOKING TIME</label>
+							<label for="recipe_cookingtime">WHERE</label>
 						</div>
-						<div class="input-field col s4">
-							<input id="recipe_yields" type="text" class="validate">
-							<label for="recipe_yields">YIELDS</label>
-						</div>
+						
 					</div>
-
-
-					<div class="row">
-						<div class="input-field col s6">
-							<h6> INGREDIENTS</h6>
-							<button onclick="component.recipeNewIngredients()" class="btn-floating waves-effect waves-light"><i class="material-icons">add</i></button>
-							<div id="recipeNewIngredients"></div>
-						</div>
-						<div class="input-field col s6">
-							<h6>PROCEDURES</h6>
-							<button onclick="component.recipeNewProcedures()" class="btn-floating waves-effect waves-light"><i class="material-icons">add</i></button>
-							<div id="recipeNewProcedures"></div>
-						</div>
 					</div>					
 				</form>
 			</div>			
@@ -839,26 +424,7 @@ class Component extends App{
 		this.state[0].bind.ingredients_name = [];		
 	}
 
-	recipeNewProcedures(){
-		let bind = this.state[0].bind.procedures;
-		bind.push("");		
-		
-		let html = ``;
-		for(let i=0;i<bind.length;i++){
-			let decode_bind = `onkeyup="component.bindRecipeNewProcedures(this.value,${i})"`;
-			html += `
-				<div class="row">
-					<div class="input-field col s12">
-						<input ${decode_bind} value="${bind[i]}" type="text" />					
-					</div>
-				</div>		
-			`;
-		}
-
-		this.reRender(`
-			${html}
-			`,document.getElementById("recipeNewProcedures"));
-	}
+	
 
 	recipeNewIngredients(obj){
 		let bind_qty = this.state[0].bind.ingredients_qty;
@@ -901,11 +467,11 @@ component.recipeLayout();
 /*
 "use strict";
 
+
 class App{
 	constructor(){
 		this.movies = [
 			{
-				"id": 1,
 				"Title":"Winter Is Coming",
 				"Year":"2011",
 				"Director":"Timothy Van Patten",
@@ -913,7 +479,6 @@ class App{
 				"Actors":"Sean Bean, Mark Addy, Nikolaj Coster-Waldau, Michelle Fairley"
 			},
 			{
-				"id": 2,
 				"Title":"The North Remembers",
 				"Year":"2012",
 				"Director":"Alan Taylor",
@@ -921,7 +486,6 @@ class App{
 				"Actors":"Peter Dinklage, Lena Headey, Nikolaj Coster-Waldau, Michelle Fairley"
 			},
 			{
-				"id": 3,
 				"Title":"Valar Dohaeris",
 				"Year":"2013",
 				"Director":"Daniel Minahan",
@@ -929,7 +493,6 @@ class App{
 				"Actors":"Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington"
 			},
 			{
-				"id": 4,
 				"Title":"Two Swords",
 				"Year":"2014",
 				"Director":"D.B. Weiss",
@@ -937,7 +500,6 @@ class App{
 				"Actors":"Peter Dinklage, Nikolaj Coster-Waldau, Lena Headey, Emilia Clarke"
 			},
 			{
-				"id": 5,
 				"Title":"The Wars to Come",
 				"Year":"2015",
 				"Director":"Michael Slovis",
@@ -945,7 +507,6 @@ class App{
 				"Actors":"Peter Dinklage, Nikolaj Coster-Waldau, Lena Headey, Emilia Clarke"
 			},
 			{
-				"id": 6,
 				"Title":"The Red Woman",
 				"Year":"2016",
 				"Director":"Jeremy Podeswa",
@@ -994,69 +555,21 @@ class App{
 		// this.movies = dummy;
 		let details = document.getElementById('movieDetails');
 		details.innerHTML = "";
-		
-		this.movieListInfo();	
-		this.showMovieList();	
+		this.movieListInfo();		
 	}
 
 	updateMovie(key){
-		let t = document.getElementById('updateTitle');
 		let y = document.getElementById('updateYear');
 		let d = document.getElementById('updateDirector');
 		let a = document.getElementById('updateActors');
 
 		let m = this.movies[key];
-		let movie = {"id":m.id,"Title":t.value,"Year":y.value,"Director":d.value,"Poster":m.Poster,"Actors":a.value};
+		let movie = {"Title":m.Title,"Year":y.value,"Director":d.value,"Poster":m.Poster,"Actors":a.value};
 
 		this.movies[key] = movie;
 		let details = document.getElementById('movieDetails');
 		details.innerHTML = "";
-		
-		this.movieListInfo();
-		this.showMovieList();
-	}
-
-	showLandingPage(){
-		$('#landingpage').show();
-		$('#createpage').hide();
-		$('#readpage').hide();
-		$('#updatedeletepage').hide();
-	}	
-
-	showMovieList(){
-		$('#landingpage').hide();
-		$('#createpage').hide();
-		$('#readpage').show();
-		$('#updatedeletepage').hide();
-	}
-
-	showMovieCreate(){
-		$('#landingpage').hide();
-		$('#createpage').show();		
-		$('#readpage').hide();
-		$('#updatedeletepage').hide();
-	}
-
-	showUpdateDelete(){
-		$('#landingpage').hide();
-		$('#createpage').hide();		
-		$('#readpage').hide();
-		$('#updatedeletepage').show();
-	}	
-
-	searchMovie(value=""){
-		let objects = [];
-		let r = this.movies;
-		for(let i=0;i<r.length;i++){
-			// console.log("r:",r[i].Title.toUpperCase().indexOf(title.toUpperCase()));
-			let expr1 = (r[i].Title.toUpperCase().indexOf(value.toUpperCase()) > -1);
-			let expr2 = (r[i].Year.toUpperCase().indexOf(value.toUpperCase()) > -1);
-			// console.log(name," vs ",r[i].name," = ",expr);
-			if(expr1 || expr2){
-				objects.push(r[i]);
-			}
-		}
-		return objects;		
+		this.movieListInfo();			
 	}
 }
 
@@ -1067,79 +580,12 @@ class Component extends App{
 
 	movieList(){
 		this.render(
-			`	      
-		<div class="header clearfix">
-            <nav>
-              <ul class="nav nav-pills float-xs-right">
-                <li class="nav-item">
-                  <a class="nav-link" href="#" onclick="component.showLandingPage()">
-					<i class="fa fa-home"></i>
-                  	Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#" onclick="component.showMovieList()">
-					<i class="fa fa-list"></i>
-                  	Movie List</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" onclick="component.showMovieCreate()">
-					<i class="fa fa-film"></i>
-                  	Movie Create</a>
-                </li>
-              </ul>
-            </nav>            
-            <h3 class="text-muted">
-            	<img class="decode-logo" src="img/decode.png"  />
-            	Movie App
-            </h3>
-          </div>
-
-
-		<div id="landingpage">
-          <div class="jumbotron">
-            <h1 class="display-3">Movie App</h1>
-            <p class="lead">A simple decode demo app about movie.</p>
-            <i class="fa fa-film fa-5x red"></i>
-          </div>
-
-          <div class="row marketing">
-            <div class="col-lg-6">              
-              <h4>
-              	<i class="fa fa-gears green"></i>
-              	Create Movie</h4>
-              <p>Provides an interface to allow adding new movie to the list. </p>
-
-              <h4>
-				<i class="fa fa-gears green"></i>
-              	Read Movie</h4>
-              <p>Provides a list view that supports movie search and show details features.</p>
-
-            </div>
-
-            <div class="col-lg-6">
-              <h4>
-              	<i class="fa fa-gears green"></i>
-              	Update Movie</h4>
-              <p>Allows the user to modify the content of a particular movie.</p>
-
-              <h4>
-              	<i class="fa fa-gears green"></i>
-              	Delete Movie</h4>
-              <p>Allows the user to remove a particular movie object from the list.</p>
-
-            </div>
-          </div>          
-
-		</div>
-				
-				<div id="createpage" class="row marketing">
-					<div class="col col-sm-12">
+			`
+				<div class="row">
+					<div class="col col-sm-6">
 						<div id="movieCreate"></div>						
 					</div>
-				</div>
-
-				<div id="readpage" class="row marketing">
-					<div class="col col-sm-12">
+					<div class="col col-sm-6">
 						<h1>Movie List</h1>
 						<table id="movieList" class="table">
 							<thead>
@@ -1149,43 +595,20 @@ class Component extends App{
 									<th>Action</th>
 								</tr>
 							</thead>
-							<div class="form-group">
-							    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-							    <div class="input-group">
-							      <div class="input-group-addon">
-									  <span class="fa fa-search"></span>
-									  <!-- checkout other fontawesome icons at http://fontawesome.io/icons/ -->
-							      </div>
-							      <input oninput="component.movieListInfo(this.value)" type="text" class="form-control" placeholder="Search">
-							    </div>
-							  </div>
 							<tbody id="movieListInfo"></tbody>
 						</table>
 					</div>
 				</div>
-
-				<div id="updatedeletepage" class="row marketing">
-					<div id="movieDetails"></div>
-				</div>
-				
-          <footer class="footer">
-            <p>&copy; decode 2016</p>
-          </footer>
-
+				<div id="movieDetails"></div>
 			`
 			,document.getElementById('app'));
 		this.movieListInfo();
-		$('#landingpage').show();
-		$('#createpage').hide();		
-		$('#readpage').hide();
 	}
 
-	movieListInfo(filter){
-		// console.log(filter);
+	movieListInfo(){
 		let html = "";
-		// let m = this.movies;
-		let m = this.searchMovie(filter);
-		for(let i=0;i<m.length;i++){	
+		let m = this.movies;
+		for(let i=0;i<m.length;i++){
 			html += `
 				<tr>
 					<td>${m[i].Title}</td>
@@ -1214,17 +637,15 @@ class Component extends App{
 						Actors: ${this.movies[key].Actors}<br/>
 						<button class="btn btn-success" onclick="component.movieUpdate(${key})">Update</button>
 						<button class="btn btn-danger" onclick="component.deleteMovie(${key})">Delete</button>
-						<button class="btn btn-info" onclick="component.showMovieList()">Back</button>
 					</div>	
 				</div>			
 			`,document.getElementById('movieDetails'));
-			this.showUpdateDelete();
 	}
 
 	movieCreate(){
 		this.render(
 			`
-				<h1>Movie Create</h1>
+				<h1>New Movie</h1>
 				Title: <input class="form-control" id="newTitle" type="" placeholder="Enter Title" /><br/>
 				Year: <input class="form-control" id="newYear" type="" placeholder="Enter Title" /><br/>
 				Director: <input class="form-control" id="newDirector" type="" placeholder="Enter Director" /><br/>
@@ -1237,47 +658,13 @@ class Component extends App{
 	movieUpdate(key){
 		this.reRender(
 			`
-				<div class="input-group input-group-md">
-		        	<span class="input-group-addon">
-		        		<span>ID</span>
-		        	</span>
-		        	<input readonly class="form-control" type="text" value="${this.movies[key].id}" /><br/>
-		        </div>
-		        <br/>
-		        <div class="input-group input-group-md">
-		        	<span class="input-group-addon">
-		        		<span>Title</span>
-		        	</span>
-		        	<input class="form-control" id="updateTitle" type="text" value="${this.movies[key].Title}" /><br/>
-		        </div>
-		        <br/>
-		        <div class="input-group input-group-md">
-		        	<span class="input-group-addon">
-		        		<span>Year</span>
-		        	</span>
-		        	<input class="form-control" id="updateYear" type="text" value="${this.movies[key].Year}" /><br/>
-		        </div>
-		        <br/>
-		        <div class="input-group input-group-md">
-		        	<span class="input-group-addon">
-		        		<span>Director</span>
-		        	</span>
-		        	<input class="form-control" id="updateDirector" type="text" value="${this.movies[key].Director}" /><br/>
-		        </div>	
-		        <br/>
-		        <div class="input-group input-group-md">
-		        	<span class="input-group-addon">
-		        		<span>Actors</span>
-		        	</span>
-		        	<input class="form-control" id="updateActors" type="text" value="${this.movies[key].Actors}" /><br/>
-		        </div>	
-				<br/>
-				<button class="btn btn-success btn-block" onclick="component.updateMovie(${key})">Save</button>
+					<h4 class="media-heading">${this.movies[key].Title}</h4>
+			        Year: <input id="updateYear" type="text" value="${this.movies[key].Year}" /><br/>
+					Director: <input id="updateDirector" type="text" value="${this.movies[key].Director}" /><br/>
+					Actors: <input id="updateActors" type="text" value="${this.movies[key].Actors}" /><br/>
+					<button class="btn btn-success" onclick="component.updateMovie(${key})">Save</button>
 			`,document.getElementById('movieDetailsInfo'));
 	}
-
-
-	
 }
 
 let component = new Component();
